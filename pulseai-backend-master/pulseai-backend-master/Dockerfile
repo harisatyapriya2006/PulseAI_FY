@@ -3,7 +3,7 @@ FROM gradle:8.7-jdk21
 
 WORKDIR /app
 
-COPY pulseai-backend-master/pulseai-backend-master/ ./
+COPY . .
 
 RUN gradle clean bootJar --no-daemon
 
