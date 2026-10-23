@@ -14,7 +14,7 @@ public class SentimentService {
     private final RestTemplate restTemplate = new RestTemplate();
 
     // URL of your running FastAPI service
-    private final String apiUrl = "http://localhost:8000/predict";
+    private final String apiUrl = "https://pulseai-fy.onrender.com/predict";
 
     public SentimentResponse analyzeSentiments(Request request) {
         System.out.println(request);
