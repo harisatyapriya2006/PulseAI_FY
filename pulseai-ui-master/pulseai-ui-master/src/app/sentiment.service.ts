@@ -6,7 +6,7 @@ import { PredictResponse } from './sentiment-response.model';
 
 @Injectable({ providedIn: 'root' })
 export class SentimentService {
-  private apiUrl = 'http://localhost:8080/api/sentiment';
+  private apiUrl = 'https://pulseai-backend-new.onrender.com/api/sentiment';
 
   constructor(private http: HttpClient) { }
 
