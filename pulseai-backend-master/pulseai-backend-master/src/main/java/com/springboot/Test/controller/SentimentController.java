@@ -14,7 +14,10 @@ public class SentimentController {
 
     @Autowired
     private SentimentService sentimentService;
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = {
+    "http://localhost:4200",
+    "https://pulseai-frontend-tb0r.onrender.com"
+})
     @PostMapping("/sentiment")
     public SentimentResponse analyze(@RequestBody Request texts) {
         return sentimentService.analyzeSentiments(texts);
